@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D09C9B823D0ACAC00D2F8FE /* MiRutinaDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D09C9B723D0ACAC00D2F8FE /* MiRutinaDetailViewController.swift */; };
+		0D09C9BA23D0BCE500D2F8FE /* MiRutinaAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D09C9B923D0BCE500D2F8FE /* MiRutinaAddViewController.swift */; };
+		0D09C9BC23D0BCF500D2F8FE /* MiRutinaAddModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D09C9BB23D0BCF500D2F8FE /* MiRutinaAddModel.swift */; };
+		0D09C9BE23D0CB5E00D2F8FE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D09C9BD23D0CB5E00D2F8FE /* MenuViewController.swift */; };
 		0D58A4AF23BE8A8F0090D4AB /* EjercicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D58A4AE23BE8A8F0090D4AB /* EjercicioViewController.swift */; };
 		0D58A4B123BE8E140090D4AB /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D58A4B023BE8E140090D4AB /* Category.swift */; };
 		0D58A4B323BE8F150090D4AB /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D58A4B223BE8F150090D4AB /* CategoryModel.swift */; };
@@ -32,6 +36,10 @@
 
 /* Begin PBXFileReference section */
 		094FAE799F6A72028761AF4F /* Pods_MyGym.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyGym.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D09C9B723D0ACAC00D2F8FE /* MiRutinaDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiRutinaDetailViewController.swift; sourceTree = "<group>"; };
+		0D09C9B923D0BCE500D2F8FE /* MiRutinaAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiRutinaAddViewController.swift; sourceTree = "<group>"; };
+		0D09C9BB23D0BCF500D2F8FE /* MiRutinaAddModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiRutinaAddModel.swift; sourceTree = "<group>"; };
+		0D09C9BD23D0CB5E00D2F8FE /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		0D58A4AE23BE8A8F0090D4AB /* EjercicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EjercicioViewController.swift; sourceTree = "<group>"; };
 		0D58A4B023BE8E140090D4AB /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		0D58A4B223BE8F150090D4AB /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
@@ -109,11 +117,14 @@
 		0D8A94D823BBB504009DD436 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0D09C9BD23D0CB5E00D2F8FE /* MenuViewController.swift */,
 				0D8A94D923BBB55C009DD436 /* CategoryViewController.swift */,
 				0D58A4AE23BE8A8F0090D4AB /* EjercicioViewController.swift */,
 				0D742D7723BF789300594374 /* DetailViewController.swift */,
 				0DFFAC5823CF78D90098772B /* EstiramientosViewController.swift */,
 				0DFFAC6223D094730098772B /* MiRutinaMasterViewController.swift */,
+				0D09C9B723D0ACAC00D2F8FE /* MiRutinaDetailViewController.swift */,
+				0D09C9B923D0BCE500D2F8FE /* MiRutinaAddViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -125,6 +136,7 @@
 				0D58A4B223BE8F150090D4AB /* CategoryModel.swift */,
 				0DFFAC5C23CF7C7C0098772B /* EstiramientoModel.swift */,
 				0DFFAC6023D093D70098772B /* MiRutinaMasterModel.swift */,
+				0D09C9BB23D0BCF500D2F8FE /* MiRutinaAddModel.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -146,7 +158,6 @@
 				3EC07C76B8DFB63560BA9EC1 /* Pods-MyGym.debug.xcconfig */,
 				5A37570C76A434DDF1AA467A /* Pods-MyGym.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -275,14 +286,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D58A4AF23BE8A8F0090D4AB /* EjercicioViewController.swift in Sources */,
+				0D09C9B823D0ACAC00D2F8FE /* MiRutinaDetailViewController.swift in Sources */,
 				0DFFAC5B23CF7B930098772B /* Estiramiento.swift in Sources */,
 				0D58A4B123BE8E140090D4AB /* Category.swift in Sources */,
 				0D8A94DA23BBB55C009DD436 /* CategoryViewController.swift in Sources */,
 				0DFFAC6123D093D70098772B /* MiRutinaMasterModel.swift in Sources */,
 				0DFFAC6323D094730098772B /* MiRutinaMasterViewController.swift in Sources */,
+				0D09C9BA23D0BCE500D2F8FE /* MiRutinaAddViewController.swift in Sources */,
 				0DF20E5323BD2F3A00A6A607 /* EjercicioModel.swift in Sources */,
 				0D6ED76623B2B68F00EBF9A7 /* HomeViewController.swift in Sources */,
 				0D58A4B323BE8F150090D4AB /* CategoryModel.swift in Sources */,
+				0D09C9BE23D0CB5E00D2F8FE /* MenuViewController.swift in Sources */,
+				0D09C9BC23D0BCF500D2F8FE /* MiRutinaAddModel.swift in Sources */,
 				0D6ED76223B2B68F00EBF9A7 /* AppDelegate.swift in Sources */,
 				0DFFAC5F23D092C50098772B /* MiRutina.swift in Sources */,
 				0D742D7823BF789300594374 /* DetailViewController.swift in Sources */,

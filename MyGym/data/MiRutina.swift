@@ -9,6 +9,7 @@
 import Foundation
 
 class MiRutina{
+    var titulo: String
     var categoria: String
     var ejercicio: String
     var series: String
@@ -16,7 +17,8 @@ class MiRutina{
     var tiempo: String
     var observaciones: String
     
-    init(categoria: String, ejercicio: String, series: String, repeticiones: String, tiempo: String, observaciones: String){
+    init(titulo: String, categoria: String, ejercicio: String, series: String, repeticiones: String, tiempo: String, observaciones: String){
+        self.titulo = titulo
         self.categoria = categoria
         self.ejercicio = ejercicio
         self.series = series

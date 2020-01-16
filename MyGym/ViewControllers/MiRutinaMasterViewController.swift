@@ -8,23 +8,52 @@
 
 import UIKit
 
-class MiRutinaMasterViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+class MiRutinaMasterViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    let masterModel: MiRutinaMasterModel = MiRutinaMasterModel()
+    var lista: [MiRutina]?
+    
+    
+    override func viewWillAppear(_ animated: Bool){
+        super.viewWillAppear(true)
+        DispatchQueue.main.async {
+            self.masterModel.obtenerRutina { (listaRecibida) in
+                self.lista = listaRecibida
+                self.tableView.reloadData()
+            }
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if lista == nil {
+            return 0
+        } else {
+            return lista!.count
+        }
     }
-    */
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let celda = tableView.dequeueReusableCell(withIdentifier: "celdaDatos", for: indexPath)
+        
+        celda.textLabel?.text = lista?[indexPath.row].ejercicio ?? ""
+        
+        return celda
+    }
+    
+    
+    // ---- Segues -------
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "passToDetail"){
+            let detailViewController = (segue.destination as! MiRutinaDetailViewController)
+            if let indexPath = tableView.indexPathForSelectedRow{
+                detailViewController.miRutina = lista![indexPath.row]
+            }
+            
+        }
+        
+    }
 
 }
