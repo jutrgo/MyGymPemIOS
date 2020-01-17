@@ -37,13 +37,13 @@ class MiRutinaMasterViewController: UIViewController, UITableViewDataSource, UIT
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celda = tableView.dequeueReusableCell(withIdentifier: "celdaDatos", for: indexPath)
         
-        celda.textLabel?.text = lista?[indexPath.row].ejercicio ?? ""
+        celda.textLabel?.text = lista?[indexPath.row].titulo ?? ""
         
         return celda
     }
     
     
-    // ---- Segues -------
+    // ---- Segues ------- 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "passToDetail"){
@@ -55,5 +55,5 @@ class MiRutinaMasterViewController: UIViewController, UITableViewDataSource, UIT
         }
         
     }
-
+    
 }

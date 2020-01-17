@@ -105,7 +105,6 @@
 				0D8A94D823BBB504009DD436 /* ViewControllers */,
 				0D6ED76123B2B68F00EBF9A7 /* AppDelegate.swift */,
 				0D6ED76323B2B68F00EBF9A7 /* SceneDelegate.swift */,
-				0D6ED76523B2B68F00EBF9A7 /* HomeViewController.swift */,
 				0D6ED76723B2B68F00EBF9A7 /* Main.storyboard */,
 				0D6ED76A23B2B69100EBF9A7 /* Assets.xcassets */,
 				0D6ED76C23B2B69100EBF9A7 /* LaunchScreen.storyboard */,
@@ -117,6 +116,7 @@
 		0D8A94D823BBB504009DD436 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0D6ED76523B2B68F00EBF9A7 /* HomeViewController.swift */,
 				0D09C9BD23D0CB5E00D2F8FE /* MenuViewController.swift */,
 				0D8A94D923BBB55C009DD436 /* CategoryViewController.swift */,
 				0D58A4AE23BE8A8F0090D4AB /* EjercicioViewController.swift */,

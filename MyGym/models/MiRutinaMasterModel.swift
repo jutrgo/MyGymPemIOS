@@ -12,8 +12,8 @@ import FirebaseDatabase
 
 class MiRutinaMasterModel{
     
-    func deleteContact(id: String ,completion: @escaping (Bool)->Void) {
-        let ref = Database.database().reference().child("misRutinas")
+    func deleteMiRutina(id: String ,completion: @escaping (Bool)->Void) {
+        let ref = Database.database().reference().child("misrutinas").child(id)
         ref.removeValue()
         completion(false)
     }
@@ -22,7 +22,7 @@ class MiRutinaMasterModel{
     func obtenerRutina(callback: @escaping ([MiRutina]?)->()){
         var temp: [MiRutina] = []
         //referencia a la base de datos
-        let ref = Database.database().reference().child("misRutinas")
+        let ref = Database.database().reference().child("misrutinas")
         //metodo que obtiene los datos
         ref.observeSingleEvent(of: .value) { (data) in
             if let datos = data.value as? NSDictionary {
