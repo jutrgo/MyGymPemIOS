@@ -11,7 +11,7 @@ import UIKit
 class MiRutinaDetailViewController: UIViewController {
     
     var miRutina: MiRutina?
-    var masterModel: MiRutinaMasterModel?
+    var detailModel: MiRutinaDetailModel = MiRutinaDetailModel()
     
     
     @IBOutlet weak var etiquetaTitulo: UILabel!
@@ -40,26 +40,30 @@ class MiRutinaDetailViewController: UIViewController {
         etiquetaObservaciones.text = "Observaciones: " + miRutina!.observaciones
     }
     
-    @IBAction func deletePressed(_ sender: Any) {
-        masterModel?.deleteMiRutina(id: self.etiquetaTitulo.text!, completion: { (error) in
-            if(error == false){
-                self.navigationController?.popViewController(animated: true)
-            }else{
-                print("no se borro el usuario")
-            }
-        })
-        
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "retornaDelete"){
+            detailModel.deleteMiRutina(id: miRutina!.titulo, completion: { (error) in
+                if (error == false) {
+                    print("se hizo")
+                } else {
+                    print("no se borro el usuario")
+                }
+            })
+        }
     }
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+        
+        
+        
+        /*
+         // MARK: - Navigation
+         
+         // In a storyboard-based application, you will often want to do a little preparation before navigation
+         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         // Get the new view controller using segue.destination.
+         // Pass the selected object to the new view controller.
+         }
+         */
+        
 }

@@ -56,4 +56,20 @@ class MiRutinaMasterViewController: UIViewController, UITableViewDataSource, UIT
         
     }
     
+    @IBAction func cancel(segue: UIStoryboardSegue) {
+        // cierra escena de agregación
+        if (segue.identifier == "retornaDelete") {
+            print("entra")
+            self.dismiss(animated: true, completion: nil)
+            self.lista?.removeAll()
+            self.tableView.reloadData()
+            DispatchQueue.main.async {
+                self.masterModel.obtenerRutina { (listaRecibida) in
+                    self.lista = listaRecibida
+                    self.tableView.reloadData()
+                }
+            }
+        }
+    }
+    
 }

@@ -12,12 +12,6 @@ import FirebaseDatabase
 
 class MiRutinaMasterModel{
     
-    func deleteMiRutina(id: String ,completion: @escaping (Bool)->Void) {
-        let ref = Database.database().reference().child("misrutinas").child(id)
-        ref.removeValue()
-        completion(false)
-    }
-    
     
     func obtenerRutina(callback: @escaping ([MiRutina]?)->()){
         var temp: [MiRutina] = []

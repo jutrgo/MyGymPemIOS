@@ -14,6 +14,7 @@
 		0D58A4AF23BE8A8F0090D4AB /* EjercicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D58A4AE23BE8A8F0090D4AB /* EjercicioViewController.swift */; };
 		0D58A4B123BE8E140090D4AB /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D58A4B023BE8E140090D4AB /* Category.swift */; };
 		0D58A4B323BE8F150090D4AB /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D58A4B223BE8F150090D4AB /* CategoryModel.swift */; };
+		0D67A14423D230310099649C /* MiRutinaDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D67A14323D230310099649C /* MiRutinaDetailModel.swift */; };
 		0D6ED76223B2B68F00EBF9A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6ED76123B2B68F00EBF9A7 /* AppDelegate.swift */; };
 		0D6ED76423B2B68F00EBF9A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6ED76323B2B68F00EBF9A7 /* SceneDelegate.swift */; };
 		0D6ED76623B2B68F00EBF9A7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6ED76523B2B68F00EBF9A7 /* HomeViewController.swift */; };
@@ -43,6 +44,7 @@
 		0D58A4AE23BE8A8F0090D4AB /* EjercicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EjercicioViewController.swift; sourceTree = "<group>"; };
 		0D58A4B023BE8E140090D4AB /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		0D58A4B223BE8F150090D4AB /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		0D67A14323D230310099649C /* MiRutinaDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiRutinaDetailModel.swift; sourceTree = "<group>"; };
 		0D6ED75E23B2B68F00EBF9A7 /* MyGym.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGym.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D6ED76123B2B68F00EBF9A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D6ED76323B2B68F00EBF9A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				0DFFAC5C23CF7C7C0098772B /* EstiramientoModel.swift */,
 				0DFFAC6023D093D70098772B /* MiRutinaMasterModel.swift */,
 				0D09C9BB23D0BCF500D2F8FE /* MiRutinaAddModel.swift */,
+				0D67A14323D230310099649C /* MiRutinaDetailModel.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				0D09C9BA23D0BCE500D2F8FE /* MiRutinaAddViewController.swift in Sources */,
 				0DF20E5323BD2F3A00A6A607 /* EjercicioModel.swift in Sources */,
 				0D6ED76623B2B68F00EBF9A7 /* HomeViewController.swift in Sources */,
+				0D67A14423D230310099649C /* MiRutinaDetailModel.swift in Sources */,
 				0D58A4B323BE8F150090D4AB /* CategoryModel.swift in Sources */,
 				0D09C9BE23D0CB5E00D2F8FE /* MenuViewController.swift in Sources */,
 				0D09C9BC23D0BCF500D2F8FE /* MiRutinaAddModel.swift in Sources */,

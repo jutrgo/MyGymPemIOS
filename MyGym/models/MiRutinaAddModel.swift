@@ -23,7 +23,7 @@ class MiRutinaAddModel{
                 completion(true)
             }else{
                 let dictionary = ["titulo":titulo, "categoria":categoria, "ejercicio":ejercicio, "series":series, "repticiones":repeticiones,"tiempo":tiempo, "observaciones":observaciones]
-                self.ref.child("misrutinas").childByAutoId().setValue(dictionary)
+                self.ref.child("misrutinas").child(titulo).setValue(dictionary)
                 completion(false)
             }
         }
