@@ -36,4 +36,6 @@ class EstiramientoModel{
     func getListaEstiramientos(id: Int) -> String{
         return listaEstiramiento[id].nombreEstiramiento// xq id?
     }
+    
+
 }
