@@ -25,6 +25,8 @@ class EstiramientosViewController: UIViewController {
     @IBOutlet weak var nameLabel4: UILabel!
     @IBOutlet weak var descriptionLabel4: UILabel!
     
+    @IBOutlet weak var nameLabel5: UILabel!
+    @IBOutlet weak var descriptionLabel5: UILabel!
     
     
     override func viewDidLoad() {
@@ -37,14 +39,21 @@ class EstiramientosViewController: UIViewController {
         nameLabel.text = "Dorsales y triceps"
         descriptionLabel.text = "De pie o sentada, con los brazos sobre la cabeza, se sostiene un codo con la mano contraria. Lentamente, tiramos el codo hacia la nuca. Se recomienda aguantar 15 segundos con cada brazo"
         
-        namelabel2.text = "Gemelos y tendones"
-        descriptionLabel2.text = "Flexionamos una pierna y la otra la estiramos. Realmente es un buen ejercicio de estiramiento no solo para los gemelos y tendones sino la pierna en general. Estaremos 15 segundos con cada pierna."
+
         
-        nameLabel3.text = "Cuadriceps"
-        descriptionLabel3.text = "Para estirar los cuádriceps y la rodilla, nos sujetaremos la parte posterior de un pie con la mano, tirando de él lentamente hacia las nalgas. Aguantamos 30 segundos con cada pierna."
+        namelabel2.text = "Dorsal e intercostal"
+        descriptionLabel2.text = "De pie o sentada, con las piernas ligeramente separadas, estiramos alternativamente los brazos intentando alargar una mano más que la otra. Se repite dos veces y aguantamos 5 segundos cada mano. Si eligimos sentadas también estiraremos la espalda. 20 segundos serían suficiente"
         
-        nameLabel4.text = "Piernas"
-        descriptionLabel4.text = "Tumbada, con una pierna estirada y con otra flexionada hacia el pecho. Estamos con casa pierna 10 segundos."
+        nameLabel3.text = "Gemelos y tendones"
+        descriptionLabel3.text = "Flexionamos una pierna y la otra la estiramos. Realmente es un buen ejercicio de estiramiento no solo para los gemelos y tendones sino la pierna en general. Estaremos 15 segundos con cada pierna."
+        
+        nameLabel4.text = "Cuadriceps"
+        descriptionLabel4.text = "Para estirar los cuádriceps y la rodilla, nos sujetaremos la parte posterior de un pie con la mano, tirando de él lentamente hacia las nalgas. Aguantamos 30 segundos con cada pierna."
+        
+        nameLabel5.text = "Piernas"
+        descriptionLabel5.text = "Tumbada, con una pierna estirada y con otra flexionada hacia el pecho. Estamos con casa pierna 10 segundos."
+        
+        
 
     }
     
