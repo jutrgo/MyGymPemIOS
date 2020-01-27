@@ -39,8 +39,6 @@ class EstiramientosViewController: UIViewController {
         nameLabel.text = "Dorsales y triceps"
         descriptionLabel.text = "De pie o sentada, con los brazos sobre la cabeza, se sostiene un codo con la mano contraria. Lentamente, tiramos el codo hacia la nuca. Se recomienda aguantar 15 segundos con cada brazo"
         
-
-        
         namelabel2.text = "Dorsal e intercostal"
         descriptionLabel2.text = "De pie o sentada, con las piernas ligeramente separadas, estiramos alternativamente los brazos intentando alargar una mano más que la otra. Se repite dos veces y aguantamos 5 segundos cada mano. Si eligimos sentadas también estiraremos la espalda. 20 segundos serían suficiente"
         
